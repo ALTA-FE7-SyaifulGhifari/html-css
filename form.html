@@ -5,26 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="form.css" />
-    <title>Form registrasi</title>
+    <title>Form Registrasi</title>
   </head>
   <body>
     <div class="profil">
       <form action="">
         <fieldset>
-          <legend>Profil</legend>
+          <legend>Registrasi</legend>
           <div>
             <label for="name=">nama</label> <br />
-            <input type="text" name="name" id="name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="budi budian"
+            />
             <br />
             <label for="email">email</label> <br />
-            <input type="text" name="email" id="email" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="budi.budian@cupang.com"
+            />
             <br />
             <label for="age">umur</label> <br />
-            <input type="text" name="age" id="age" />
+            <input type="number" name="age" id="age" placeholder="16-35"/>
             <br />
             <label for="nomorwa">nomor WA</label> <br />
-            <input type="number" name="nomorwa" id="nomorwa" />
-            <br />
+            <input
+              type="number"
+              name="nomorwa"
+              id="nomorwa"
+              placeholder="+62123456789"
+            />
+          </div>
+            <div>
             <label for="gender"
               >gender <br />
               <input type="radio" name="gender" id="gender" value="laki-laki" />
@@ -32,6 +48,11 @@
               <input type="radio" name="gender" id="gender" value="perempuan" />
               perempuan
             </label>
+          </div>
+            <br />
+              <div>
+                <input type="button" value="submit" />
+              </div>
           </div>
         </fieldset>
       </form>
